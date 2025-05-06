@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Fútbol</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!--Barra de Navegación-->
+    <nav>
+        <div class="logo">Tienda Fútbol</div>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#carrito">Carrito</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--Inicio-->
+    <section id="inicio" class="seccion">
+        <h1>Bienvenido a Tienda Fútbol</h1>
+        <p>Tu tienda de futbol de confianza</p>
+        <img src="bannerFutbol.jpg" alt="Banner de Futbol" class="banner">
+    </section>
+    <!--Productos-->
+    <section id="productos" class="seccion">
+        <h2>Productos Destacados</h2>
+        <div class="productos-div">
+            <!--Producto 1-->
+            <div class="producto">
+                <img src="camiseta.jpg" alt="cami Futbol">
+                <h3>Camiseta Atlético de Madrid(Primera Equipacion)</h3>
+                <p>Precio: 75.99€</p>
+                <button onclick="agregarAlCarrito('Camiseta Atlético de Madrid',75.99)">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="balon.jpg" alt="Balón la liga">
+                <h3>Balón laLiga</h3>
+                <p>Precio: 29,99€</p>
+                <button onclick="agregarAlCarrito('Balón laLiga', 29.99)">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="botas.jpg" alt="Botas Adidas">
+                <h3>Botas Adidas</h3>
+                <p>Precio: 89,99€</p>
+                <button onclick="agregarAlCarrito('Botas Adidas', 89.99)">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="productos-div">
+            <!--Producto 1-->
+            <div class="producto">
+                <img src="camiseta2.jpg" alt="segunda Equipacion">
+                <h3>Camiseta Atlético de Madrid(Segunda Equipacion)</h3>
+                <p>Precio: 75.99€</p>
+                <button onclick="agregarAlCarrito('Camiseta Atlético de Madrid 2 ',75.99)">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="guantes.jpg" alt="Guantes Atlético de Madrid">
+                <h3>Guantes Atlético de Madrid</h3>
+                <p>Precio: 15.99€</p>
+                <button onclick="agregarAlCarrito('Guantes Atlético de Madrid', 29.99)">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="" alt="">
+                <h3></h3>
+                <p>Precio: 89,99€</p>
+                <button onclick="agregarAlCarrito('', 89.99)">Añadir al carrito</button>
+            </div>
+        </div>
+
+
+    </section>
+    <!--Carrito-->
+    <section id="carrito" class="seccion">
+        <h2>Carrito de Compras</h2>
+        <ul id="listaCarrito"></ul>
+        <p id="total">Total: 0.00€</p>
+    </section>
+    <!--Contacto-->
+    <section id="contacto" class="seccion">
+        <h2>Formulario para contactar</h2>
+        <form id="formularioTexto">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <textarea id="mensaje" placeholder="mensaje"></textarea>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+    <script src="javaScript.js"></script>
+</body>
+</html>
