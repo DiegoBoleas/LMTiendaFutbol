@@ -31,9 +31,7 @@ nav .menu {
     gap: 1.5rem;
 }
 
-nav .menu li {
-    display: inline;
-}
+
 
 nav .menu li a {
     color: white;
