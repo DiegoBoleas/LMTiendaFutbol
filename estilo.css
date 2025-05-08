@@ -6,39 +6,7 @@ body {
     color: #333;
 }
 
-/* Barra de navegación */
-/*fondo, color del texto, añadir espacio alrededor del contenido y centrar el contenido  */
-nav {
-    background: #333;
-    color: white;
-    padding: 16px;
-    text-align: center;
-}
-/*Logo de la Tienda*/
-/*Texto grande y en negrita*/
-nav .logo {
-    font-size: 28px;
-    font-weight: bold;
-}
-/*Menu de navegacion*/
-/*eliminar puntos, diseño en fila, alinear elementos y margen superior de 16px */
-nav .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-/*Espacio entre los elementos del menu*/
-nav.menu li {
-    margin: 0 12px;
-}
-/*Enlaces del menu*/
-/*color blanco, sin subrayar y en negrita*/
-nav .menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+
 
 /* Secciones */
 /*añadir espacio alrededor del contenido y texto centrado*/
