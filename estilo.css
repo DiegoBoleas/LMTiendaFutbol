@@ -1,20 +1,19 @@
-/* Reset de estilos */
+/* Reset y fuente base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Estilos generales */
 body {
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
     color: #333;
 }
 
-/* Barra de Navegación */
+/* Barra de navegación */
 nav {
-    background-color: #333;
+    background: #333;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -27,63 +26,53 @@ nav .logo {
 
 nav .menu {
     list-style: none;
-    display: inline-flex;
-    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+nav.menu li {
+    margin: 0 0.75rem;
 }
 
-
-
-nav .menu li a {
+nav .menu a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Sección: Inicio */
-#inicio {
-    text-align: center;
+/* Secciones */
+.seccion {
     padding: 3rem;
-    background-color: #0088cc;
+    text-align: center;
+}
+
+#inicio {
+    background: #0088cc;
     color: white;
 }
 
-#inicio h1 {
-    font-size: 2rem;
-}
-
-#inicio .banner {
+.banner {
     width: 100%;
     max-height: 400px;
-    object-fit: cover;
     margin-top: 2rem;
+    display: block;
 }
 
-/* Sección: Productos */
-#productos {
-    padding: 3rem;
-    text-align: center;
-}
-
-#productos h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-}
-
+/* Productos */
 .productos-div {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;
 }
 
 .producto {
-    background-color: white;
+    margin: 1rem;
+    background: white;
     padding: 1rem;
-    width: 30%;  /* Usando un porcentaje para que sea más flexible */
-    max-width: 300px;  /* Para no exceder un límite en pantallas grandes */
+    width: 100%;
+    max-width: 300px;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .producto img {
@@ -96,7 +85,7 @@ nav .menu li a {
 }
 
 .producto button {
-    background-color: #0088cc;
+    background: #0088cc;
     color: white;
     padding: 0.8rem 1rem;
     border: none;
@@ -105,18 +94,12 @@ nav .menu li a {
 }
 
 .producto button:hover {
-    background-color: #006f99;
+    background: #006f99;
 }
 
-/* Sección: Carrito */
+/* Carrito */
 #carrito {
-    padding: 3rem;
-    background-color: yellow;
-    text-align: center;
-}
-
-#carrito h2 {
-    font-size: 1.8rem;
+    background: #ffeb3b;
 }
 
 #listaCarrito {
@@ -125,7 +108,7 @@ nav .menu li a {
 }
 
 #listaCarrito li {
-    margin-bottom: 1rem;
+    margin: 0.5rem 0;
 }
 
 #total {
@@ -133,25 +116,19 @@ nav .menu li a {
     font-weight: bold;
 }
 
-/* Sección: Contacto */
+/* Contacto */
 #contacto {
-    padding: 3rem;
-    background-color: #0088cc;
+    background: #0088cc;
     color: white;
-    text-align: center;
-}
-
-#contacto h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
 }
 
 #formularioTexto {
     max-width: 400px;
-    margin: 0 auto;
+    margin: auto;
 }
 
-#formularioTexto input, #formularioTexto textarea {
+#formularioTexto input,
+#formularioTexto textarea {
     width: 100%;
     padding: 1rem;
     margin: 1rem 0;
@@ -160,10 +137,6 @@ nav .menu li a {
 }
 
 #formularioTexto button {
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    background: black;
+    
 }
