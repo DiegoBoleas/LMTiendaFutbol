@@ -1,10 +1,5 @@
-/* Reset y fuente base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+/*Fuente, fondo y color del texto */
 body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
@@ -12,28 +7,33 @@ body {
 }
 
 /* Barra de navegación */
+/*fondo, color del texto, añadir espacio alrededor del contenido y centrar el contenido  */
 nav {
     background: #333;
     color: white;
-    padding: 1rem;
+    padding: 16px;
     text-align: center;
 }
-
+/*Logo de la Tienda*/
+/*Texto grande y en negrita*/
 nav .logo {
-    font-size: 1.8rem;
+    font-size: 28px;
     font-weight: bold;
 }
-
+/*Menu de navegacion*/
+/*eliminar puntos, diseño en fila, alinear elementos y margen superior de 16px */
 nav .menu {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 16px;
 }
+/*Espacio entre los elementos del menu*/
 nav.menu li {
-    margin: 0 0.75rem;
+    margin: 0 12px;
 }
-
+/*Enlaces del menu*/
+/*color blanco, sin subrayar y en negrita*/
 nav .menu a {
     color: white;
     text-decoration: none;
@@ -41,102 +41,98 @@ nav .menu a {
 }
 
 /* Secciones */
+/*añadir espacio alrededor del contenido y texto centrado*/
 .seccion {
-    padding: 3rem;
+    padding: 48px;
     text-align: center;
 }
-
+/*Inicio*/
+/*color de fondo y color de letra*/
 #inicio {
-    background: #0088cc;
+    background: blue;
     color: white;
 }
-
+/*Banner de imagen*/
+/*ancho completo, alto maximo, margen arriba y imagen en bloque */
 .banner {
     width: 100%;
     max-height: 400px;
-    margin-top: 2rem;
+    margin-top: 32px;
     display: block;
 }
 
 /* Productos */
+/*Organiza los productos en fila, centra los elementos de los productos*/
 .productos-div {
     display: flex;
     justify-content: center;
 }
-
+/*Producto*/
+/*margen de 16px, fondo blanco, relleno interno de 16px, ancho 100%, ancho max a 300px, texto centrado*/
 .producto {
-    margin: 1rem;
+    margin: 16px;
     background: white;
-    padding: 1rem;
+    padding: 16px;
     width: 100%;
     max-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
+/*imagen del producto*/
+/*ancho 100%, altura automatico*/
 .producto img {
     width: 100%;
     height: auto;
 }
-
+/*Titulo dle producto*/
+/*margen 16px*/
 .producto h3 {
-    margin: 1rem 0;
+    margin: 16px;
 }
-
+/*Botón añadir al carrito*/
+/*fondo azul, color texto blanco, relleno de 12px, indica que el boton es interactivo*/
 .producto button {
-    background: #0088cc;
+    background: blue;
     color: white;
-    padding: 0.8rem 1rem;
-    border: none;
-    border-radius: 4px;
+    padding: 12px ;
     cursor: pointer;
 }
-
+/*Efecto hover del botón: azul más oscuro al pasar el cursor*/
 .producto button:hover {
-    background: #006f99;
+    background: green;
 }
-
 /* Carrito */
+/*fondo amarillo*/
 #carrito {
-    background: #ffeb3b;
+    background: yellow;
 }
-
-#listaCarrito {
-    list-style: none;
-    padding: 0;
-}
-
-#listaCarrito li {
-    margin: 0.5rem 0;
-}
-
+/*Texto del total*/
+/*tamaño de fuente y texto en negrita*/
 #total {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
 }
-
 /* Contacto */
+/*fondo aquamarine y color texto blanco*/
 #contacto {
-    background: #0088cc;
+    background: aquamarine;
     color: white;
 }
-
+/*contenedor del formulario*/
+/*ancho max, margen automatico*/
 #formularioTexto {
     max-width: 400px;
     margin: auto;
 }
-
+/*inputs y textarea del formulario*/
+/*ancho, relleno dentro de los campos y margen */
 #formularioTexto input,
 #formularioTexto textarea {
     width: 100%;
-    padding: 1rem;
-    margin: 1rem 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 16px;
+    margin: 16px;
 }
-
+/*boton de envio del formulario*/
+/*fondo blanco*/
 #formularioTexto button {
-    background: black;
-    
+    background: white;
 }

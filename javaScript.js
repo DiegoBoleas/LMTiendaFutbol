@@ -1,31 +1,35 @@
-//JS para el formulario: 
-let nombre = document.getElementById("nombre");
-let email = document.getElementById("email");
-let mensaje = document.getElementById("mensajeTexto");
-let botonFormularioEnviar = document.getElementById("botonFormularioEnviar");
+//JS para el formulario\\
+// Obtener los elementos del formulario mediante su ID
+let nombre = document.getElementById("nombre");// Obtiene el campo de texto para el nombre
+let email = document.getElementById("email");// Obtiene el campo de texto para el email
+let mensaje = document.getElementById("mensajeTexto");// Obtiene el campo de texto para el mensaje
+let botonFormularioEnviar = document.getElementById("botonFormularioEnviar");// Obtiene el botón de envío del formulario
 //Funcion mostrarDatosPorConsola del formulario
 function mostrarDatosPorConsola(){
-    console.log("Nombre: " + nombre.value);
-    console.log("Email: " + email.value);
-    console.log("Mensaje: " + mensaje.value);
-    alert("Nombre: " + nombre.value + "Email: " + email.value + "Mensaje: " + mensaje);
+    console.log("Nombre: " + nombre.value);// Muestra el valor del campo "nombre" en la consola
+    console.log("Email: " + email.value);// Muestra el valor del campo "email" en la consola
+    console.log("Mensaje: " + mensaje.value);// Muestra el valor del campo "mensaje" en la consola
+    alert("Nombre: " + nombre.value + " Email: " + email.value + " Mensaje: " + mensaje.value);  // Muestra una alerta con los datos del formulario
 }
 //asocio boton de enviar con click.
+// Cuando se hace clic en el botón, se ejecuta la función mostrarDatosPorConsola
 botonFormularioEnviar.addEventListener("click", mostrarDatosPorConsola);
 
-
+// Variable para llevar el control del total del carrito
 let total = 0;
 
+// Función para agregar productos al carrito
 function agregarAlCarrito(nombreProducto, precio) {
     // Crear un nuevo elemento <li> para el producto
-    const lista = document.getElementById('listaCarrito');
-    const item = document.createElement('li');
-    item.textContent = `${nombreProducto} - ${precio.toFixed(2)}€`;
-    lista.appendChild(item);
+    const lista = document.getElementById('listaCarrito');// Obtiene la lista donde se agregarán los productos
+    const item = document.createElement('li'); // Crea un nuevo elemento de lista <li>
+    item.textContent = `${nombreProducto} - ${precio.toFixed(2)}€`;// Establece el contenido del <li> como el nombre del producto y su precio con 2 decimales
+    lista.appendChild(item);// Agrega el nuevo elemento <li> a la lista del carrito
 
     // Sumar al total
+    //incrementa el total con el precio del producto agregado
     total += precio;
 
-    // Actualizar el total en el HTML
+    // Actualiza el texto del total en el HTML con el nuevo valor
     document.getElementById('total').textContent = `Total: ${total.toFixed(2)}€`;
 }
