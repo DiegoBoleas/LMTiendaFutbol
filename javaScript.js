@@ -33,3 +33,17 @@ function agregarAlCarrito(nombreProducto, precio) {
     // Actualiza el texto del total en el HTML con el nuevo valor
     document.getElementById('total').textContent = `Total: ${total.toFixed(2)}€`;
 }
+
+// Obtener el botón de vaciar carrito
+const botonVaciarCarrito = document.getElementById("vaciarCarrito");
+
+// Función para vaciar el carrito
+function vaciarCarrito() {
+    const lista = document.getElementById('listaCarrito');
+    lista.innerHTML = ""; // Borra todos los elementos del carrito
+    total = 0; // Reinicia el total
+    document.getElementById('total').textContent = `Total: ${total.toFixed(2)}€`; // Actualiza el total en pantalla
+}
+
+// Asociar el botón a la función
+botonVaciarCarrito.addEventListener("click", vaciarCarrito);
