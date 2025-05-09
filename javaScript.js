@@ -6,9 +6,6 @@ let mensaje = document.getElementById("mensajeTexto");// Obtiene el campo de tex
 let botonFormularioEnviar = document.getElementById("botonFormularioEnviar");// Obtiene el botón de envío del formulario
 //Funcion mostrarDatosPorConsola del formulario
 function mostrarDatosPorConsola(){
-    console.log("Nombre: " + nombre.value);// Muestra el valor del campo "nombre" en la consola
-    console.log("Email: " + email.value);// Muestra el valor del campo "email" en la consola
-    console.log("Mensaje: " + mensaje.value);// Muestra el valor del campo "mensaje" en la consola
     alert("Nombre: " + nombre.value + " Email: " + email.value + " Mensaje: " + mensaje.value);  // Muestra una alerta con los datos del formulario
 }
 //asocio boton de enviar con click.
