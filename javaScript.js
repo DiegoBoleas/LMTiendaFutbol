@@ -23,7 +23,7 @@ function agregarAlCarrito(nombreProducto, precio) {
     // Crear un nuevo elemento <li> para el producto
     const lista = document.getElementById('listaCarrito');// Obtiene la lista donde se agregarán los productos
     const item = document.createElement('li'); // Crea un nuevo elemento de lista <li>
-    item.textContent = `${nombreProducto} - ${precio.toFixed(2)}€`;// Establece el contenido del <li> como el nombre del producto y su precio con 2 decimales
+    item.textContent = `${nombreProducto} - ${precio}€`;// Establece el contenido del <li> como el nombre del producto y su precio con 2 decimales
     lista.appendChild(item);// Agrega el nuevo elemento <li> a la lista del carrito
 
     // Sumar al total
@@ -31,7 +31,7 @@ function agregarAlCarrito(nombreProducto, precio) {
     total += precio;
 
     // Actualiza el texto del total en el HTML con el nuevo valor
-    document.getElementById('total').textContent = `Total: ${total.toFixed(2)}€`;
+    document.getElementById('total').textContent = `Total: ${total}€`;
 }
 
 // Obtener el botón de vaciar carrito
@@ -42,7 +42,7 @@ function vaciarCarrito() {
     const lista = document.getElementById('listaCarrito');
     lista.innerHTML = ""; // Borra todos los elementos del carrito
     total = 0; // Reinicia el total
-    document.getElementById('total').textContent = `Total: ${total.toFixed(2)}€`; // Actualiza el total en pantalla
+    document.getElementById('total').textContent = `Total: ${total}€`; // Actualiza el total en pantalla
 }
 
 // Asociar el botón a la función
