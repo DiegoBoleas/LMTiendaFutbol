@@ -1,0 +1,126 @@
+
+/*Fuente, fondo y color del texto */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Secciones */
+/*añadir espacio alrededor del contenido y texto centrado*/
+.seccion {
+    padding: 48px;
+    text-align: center;
+}
+/*Inicio*/
+/*color de fondo y color de letra*/
+#inicio {
+    background: blue;
+    color: white;
+}
+/*Banner de imagen*/
+/*ancho completo, alto maximo, margen arriba y imagen en bloque */
+.banner {
+    width: 100%;
+    max-height: 400px;
+    margin-top: 32px;
+    display: block;
+}
+
+/* Productos */
+/*Organiza los productos en fila, centra los elementos de los productos*/
+.productos-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Producto*/
+/*margen de 16px, fondo blanco, relleno interno de 16px, ancho 100%, ancho max a 300px, texto centrado*/
+.producto {
+    flex: 1 1 250px;
+    margin: 16px;
+    background: white;
+    padding: 16px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+/*imagen del producto*/
+/*ancho 100%, altura automatico*/
+.producto img {
+    width: 100%;
+    height: auto;
+}
+/*Titulo dle producto*/
+/*margen 16px*/
+.producto h3 {
+    margin: 16px;
+}
+/*Botón añadir al carrito*/
+/*fondo azul, color texto blanco, relleno de 12px, indica que el boton es interactivo*/
+.producto button {
+    background: blue;
+    color: white;
+    padding: 12px ;
+    cursor: pointer;
+}
+/*Efecto hover del botón: azul más oscuro al pasar el cursor*/
+.producto button:hover {
+    background: green;
+}
+/* Carrito */
+/*fondo amarillo*/
+#carrito {
+    background: yellow;
+}
+/*Texto del total*/
+/*tamaño de fuente y texto en negrita*/
+#total {
+    font-size: 24px;
+    font-weight: bold;
+}
+/*Boton Vaciar carrito*/
+/*Fondo, color, relleno, margen arriba, indica que el boton es interactivo */
+#vaciarCarrito {
+    background: red;
+    color: white;
+    padding: 12px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+/*Cambia el color de fondo cuando se pasa el cursor sobre el botón*/
+#vaciarCarrito:hover {
+    background: darkred;
+}
+/* Contacto */
+/*fondo aquamarine y color texto blanco*/
+#contacto {
+    background: aquamarine;
+    color: black;
+}
+/*contenedor del formulario*/
+/*ancho max, margen automatico*/
+#formularioTexto {
+    max-width: 400px;
+    margin: auto;
+}
+/*inputs y textarea del formulario*/
+/*ancho, relleno dentro de los campos y margen */
+#formularioTexto input,
+#formularioTexto textarea {
+    width: 100%;
+    padding: 16px;
+    margin: 16px;
+    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+}
+/*boton de envio del formulario*/
+/*fondo blanco*/
+#formularioTexto button {
+    background: white;
+}
