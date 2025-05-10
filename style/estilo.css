@@ -1,16 +1,15 @@
-
 /*Fuente, fondo y color del texto */
 body {
     font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
+    background: white;
+    color:grey;
     overflow-x: hidden;
 }
+/*para las imagenes ancho maximo y alto automático*/
 img {
     max-width: 100%;
     height: auto;
 }
-
 
 /* Secciones */
 /*añadir espacio alrededor del contenido y texto centrado*/
@@ -18,12 +17,14 @@ img {
     padding: 48px;
     text-align: center;
 }
+
 /*Inicio*/
 /*color de fondo y color de letra*/
 #inicio {
     background: blue;
     color: white;
 }
+
 /*Banner de imagen*/
 /*ancho completo, alto maximo, margen arriba y imagen en bloque */
 .banner {
@@ -34,14 +35,16 @@ img {
 }
 
 /* Productos */
-/*Organiza los productos en fila, centra los elementos de los productos*/
+/*Organiza los productos en fila, 
+centra los elementos de los productos*/
 .productos-div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-/*Producto*/
-/*margen de 16px, fondo blanco, relleno interno de 16px, ancho 100%, ancho max a 300px, texto centrado*/
+/*Productos*/
+/*margen de 16px, fondo blanco, relleno interno de 16px, 
+ancho 100%, ancho max a 300px, texto centrado*/
 .producto {
     flex: 1 1 250px;
     margin: 16px;
@@ -63,7 +66,8 @@ img {
     margin: 16px;
 }
 /*Botón añadir al carrito*/
-/*fondo azul, color texto blanco, relleno de 12px, indica que el boton es interactivo*/
+/*fondo azul, color texto blanco, relleno de 12px, 
+indica que el boton es interactivo*/
 .producto button {
     background: blue;
     color: white;
@@ -86,7 +90,8 @@ img {
     font-weight: bold;
 }
 /*Boton Vaciar carrito*/
-/*Fondo, color, relleno, margen arriba, indica que el boton es interactivo */
+/*Fondo, color, relleno, margen arriba, 
+indica que el boton es interactivo */
 #vaciarCarrito {
     background: red;
     color: white;
@@ -94,7 +99,8 @@ img {
     margin-top: 16px;
     cursor: pointer;
 }
-/*Cambia el color de fondo cuando se pasa el cursor sobre el botón*/
+/*Cambia el color de fondo cuando se pasa 
+ el cursor sobre el botón*/
 #vaciarCarrito:hover {
     background: darkred;
 }
@@ -117,7 +123,8 @@ img {
     width: 100%;
     padding: 16px;
     margin: 16px;
-    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+    box-sizing: border-box; 
+    /* Para que el padding no afecte el ancho */
 }
 /*boton de envio del formulario*/
 /*fondo blanco*/
